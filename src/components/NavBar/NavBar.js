@@ -10,7 +10,7 @@ const NavBar = () => {
         { name: 'Login', id: 4, link: '/Login' },
     ]
     return (
-        <nav className=' bg-indigo-700 md:h-14 text-white'>
+        <nav className=' bg-indigo-700 md:h-14 text-white flex items-center'>
             <div onClick={()=>setOpen(!open)} className='h-9 w-9 md:hidden'>
                 { open ?<XIcon></XIcon> :<MenuIcon></MenuIcon>}
             </div>

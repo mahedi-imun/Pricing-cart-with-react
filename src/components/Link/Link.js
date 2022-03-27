@@ -1,5 +1,8 @@
 import React from 'react';
-
+function isAdmin( user) {
+    return (  user ? 'Admin' : 'Normal User');
+   }
+   console.log(isAdmin(true));
 const Link = ({item}) => {
     const { name, link}=item;
     return (
